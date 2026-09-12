@@ -1,0 +1,13 @@
+backend/Lib/
+backend/Scripts/
+backend/venv/
+venv/
+__pycache__/
+*.pyc
+
+data/chroma_db/
+
+frontend/node_modules/
+frontend/dist/
+
+.env

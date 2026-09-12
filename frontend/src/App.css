@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    Arial,
+    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #172033,
+      #080b11 55%
+    );
+
+  color: #f8fafc;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 30px;
+  background: #182235;
+  border: 1px solid #334155;
+  color: #7dd3fc;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  margin: 20px 0 10px;
+  font-size: 48px;
+}
+
+h1 span {
+  color: #38bdf8;
+}
+
+header p {
+  max-width: 650px;
+  margin: auto;
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.card {
+  margin-bottom: 24px;
+  padding: 26px;
+  border-radius: 18px;
+
+  background:
+    rgba(
+      15,
+      23,
+      42,
+      0.75
+    );
+
+  border:
+    1px solid
+    rgba(
+      148,
+      163,
+      184,
+      0.16
+    );
+
+  backdrop-filter:
+    blur(16px);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: #080d16;
+  border: 1px solid #334155;
+  color: white;
+  border-radius: 10px;
+  padding: 14px;
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #38bdf8;
+}
+
+button {
+  background: #0ea5e9;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 13px 22px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0284c7;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ask-button {
+  margin-top: 14px;
+}
+
+.message {
+  color: #94a3b8;
+  margin-bottom: 0;
+}
+
+.repo-id {
+  margin-top: 16px;
+  color: #94a3b8;
+}
+
+.repo-id code {
+  margin-left: 8px;
+  color: #7dd3fc;
+}
+
+.answer {
+  line-height: 1.7;
+  white-space: pre-wrap;
+  color: #e2e8f0;
+}
+
+.sources {
+  border-top: 1px solid #334155;
+  margin-top: 24px;
+  padding-top: 16px;
+}
+
+.source {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  color: #94a3b8;
+}
+
+.source strong {
+  color: #7dd3fc;
+}
+
+@media (
+  max-width: 650px
+) {
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .source {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
